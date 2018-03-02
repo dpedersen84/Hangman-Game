@@ -1,0 +1,26 @@
+body {
+    background-color: yellow;
+}
+
+.simphead {
+
+    font-family: 'Bangers', cursive;
+
+}
+
+.hangman {
+
+    border-style: dashed;
+    border-color: black;
+    border-width: 5px;
+    height: 600px;
+    margin-left: 275px;
+    padding-top: 225px;
+}
+
+.game {
+    border-style: dashed;
+    border-color: black;
+    border-width: 5px;
+    margin-left: 10px;
+}

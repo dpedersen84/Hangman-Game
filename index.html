@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simpson's Hangman!</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+    <div class="container-fluid text-center">
+        <img src = "./assets/images/simp1.jpeg" class="img-responsive" height="300px">
+        <h1 class="simphead">The Simpson's Hangman!</h1>
+    </div>
+    
+    <div class="container text-center">
+        
+        <div class="row">
+
+            <div class="hangman col-xs-6 col-md-3">
+                <img src = "./assets/images/Hangman.png" height="200px">
+            </div>
+
+            <div class="game col-xs-6 col-md-3">
+                <h3 id="start">Press any key to start...</h3><br>
+                <h4 id="win">Wins: </h4><br>
+                <h4 id="guess">Current Word:</h4><br>
+                <h4 id="remains">Number of guesses remaining:</h4><br>
+                <h4 id="letters">Letters you have guessed:</h4>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
