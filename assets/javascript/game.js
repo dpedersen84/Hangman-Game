@@ -35,9 +35,10 @@ function newGuessThisWord () {
     this.guessThisWord = this.wordArr[Math.floor(Math.random() * this.wordArr.length)];
     console.log("Word To Guess: " + guessThisWord);    
 
-    var strLength = guessThisWord.length;
+    var str = guessThisWord;
+    var strLength = str.length;
     for (var x = 0; x < strLength; x++) {
-        var y = guessThisWord.replace(guessThisWord, '_ ');
+        var y = str.replace(str, '_ ');
         document.getElementById("word").innerHTML = y;
     } 
 
