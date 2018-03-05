@@ -8,7 +8,6 @@
 //Stats Default
 var wins = 0;
 var losses = 0;
-// var guesses = 5;
 var guessesLeft = 5;
 var guessedLetters = [];
 var guessThisWord = [];
@@ -39,7 +38,7 @@ function newGuessThisWord () {
 //Substitute Letters of guessThisWord on DOM to '_'
 function sub () {
     for (var x = 0; x < guessThisWord.length; x++) {
-        var y = guessThisWord.replace(guessThisWord, '_  ');
+        var y = guessThisWord.replace(guessThisWord, '_  '); // Why does only one underscore show up?
         document.getElementById("word").innerHTML = y;
     };
 };
@@ -58,6 +57,7 @@ function reset () {
     newGuessesLeft ();
     newGuessThisWord ();
     newGuessedLetters ();
+    sub ();
 };
 
 //Call
