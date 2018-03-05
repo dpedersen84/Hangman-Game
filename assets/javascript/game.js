@@ -34,7 +34,21 @@ function newGuessesLeft () {
 function newGuessThisWord () {
     this.guessThisWord = this.wordArr[Math.floor(Math.random() * this.wordArr.length)];
     console.log("Word To Guess: " + guessThisWord);    
+
+    var strLength = guessThisWord.length;
+    for (var x = 0; x < strLength; x++) {
+        var y = guessThisWord.replace(guessThisWord, '_ ');
+        document.getElementById("word").innerHTML = y;
+    } 
+
 };
+
+//convert to _
+//how many letters in string?
+
+
+//place on Dom
+//
 
 //Letters Guessed
 function newGuessedLetters () {
