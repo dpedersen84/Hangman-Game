@@ -43,6 +43,8 @@ function sub () {
     };
 };
 
+//Push word to guess onto DOM with underscores representing letters
+
 //Letters Guessed
 function newGuessedLetters () {
     document.getElementById("letters").innerHTML = guessedLetters.join(" ");
@@ -79,6 +81,8 @@ document.onkeyup = function (event) {
         guessedLetters.push(letter); //Pushes Letter Variable to Guessed Letters Array
         newGuessesLeft(); //Updates the number of Guesses Left
         newGuessedLetters(); //Adds letter to Guessed Letters Array on DOM
+
+    //Replace '_' with correctly guessed letters on DOM
 
     if (guessThisWord.includes(letter)&& (guessesLeft <5)) {
         audioElement2.play(); //Sound on Win
